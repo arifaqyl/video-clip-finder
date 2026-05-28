@@ -2,7 +2,7 @@ import subprocess
 import sys
 import os
 
-def measure_loudness_audio_only(video_path, start_time, duration=5):
+def measure_loudness_audio_only(video_path, start_time, duration=20): 
     """Measure peak volume - AUDIO ONLY (fast)"""
     cmd = [
         'ffmpeg',
@@ -26,7 +26,7 @@ def measure_loudness_audio_only(video_path, start_time, duration=5):
                 return -999
     return -999
 
-def get_top_moments(video_path, num_clips=5):
+def get_top_moments(video_path, num_clips=60):
     """Find the top N LOUDEST moments"""
     print(f"Analyzing: {video_path}\n")
     
@@ -95,4 +95,4 @@ if __name__ == "__main__":
         sys.exit(1)
     
     video_path = sys.argv[1]
-    moments = get_top_moments(video_path, num_clips=10)  # Was 5, now 10
+    moments = get_top_moments(video_path, num_clips=60)  # EXACTLY 60 CLIPS
