@@ -1,4 +1,4 @@
-# clip-finder
+# video-clip-finder
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![ffmpeg](https://img.shields.io/badge/ffmpeg-audio_analysis-007808?style=flat-square&logo=ffmpeg&logoColor=white)
@@ -71,8 +71,8 @@ No pip dependencies. Uses Python standard library only.
 ## Install
 
 ```bash
-git clone https://github.com/arifaqyl/clip-finder
-cd clip-finder
+git clone https://github.com/arifaqyl/video-clip-finder
+cd video-clip-finder
 ```
 
 ---
